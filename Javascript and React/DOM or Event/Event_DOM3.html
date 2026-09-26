@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input" placeholder="Pna name likho">
+    <button id="btn">dikhao</button>
+    <h1 id="h1"></h1>
+
+    <script>
+
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", function(){
+            let x = document.getElementById("h1");
+            username = input.value;
+            document.getElementById("h1").textContent = "salam " + username;
+        })
+
+    </script>
+</body>
+</html>

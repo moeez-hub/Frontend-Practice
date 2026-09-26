@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="btn">click me</button>
+    <p id="para"></p>
+
+<script>
+        let btn = document.getElementById("btn");
+        let url = "https://catfact.ninja/fact";
+        let p = document.getElementById("para");
+
+       let getData = async ()=>{
+            let response = await fetch(url);
+            let data = await response.json();
+            
+            p.textContent = data.fact;
+        }
+
+        btn.addEventListener("click", getData);
+</script>    
+</body>
+</html>

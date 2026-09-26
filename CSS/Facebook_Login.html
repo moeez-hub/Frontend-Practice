@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+
+    <style>
+
+        .container{
+            display: flex;
+        }
+       
+       .left{
+        width: 50%;
+       }
+
+        .right{
+            position: absolute;
+            bottom: 230px;
+            right: 70px;
+            background-color: white;
+            padding: 20px;
+
+        }
+
+        .right label{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight: 200;
+        }
+           .right input {
+            display: block;
+            width: 500px;
+            padding: 20px;
+            margin-bottom: 10px;
+            border: 1px solid #dddfe2;
+            border-radius: 15px;
+            font-size: 17px;
+        }
+
+        /* ye login wala button ha */
+        .right button{
+            width: 525px;
+            padding: 17px;
+            background-color: blue;
+            border: none;
+            border-radius: 25px;
+            color: white;
+        }
+
+        #forget{
+            color: black;
+            border: none;
+            background-color: white;
+        }
+
+     
+        #create-new-account-button{
+            background-color: white;
+            color: rgb(109, 109, 238);
+            position: absolute;
+            border: solid;
+            border-width: 1px;
+            border-color: blue;
+            top: 400px;
+            padding: 14px;
+            border-radius: 25px;
+            font-size: 16px;
+        }
+
+        body {
+            background-image: url(Computer.png), url(Screenshot_select-area_20260815001613.png);
+            background-repeat: no-repeat, no-repeat;
+            background-size: 485px, 65px;
+            background-position: 280px 45px, 45px 40px;
+        }
+
+        #h1 {
+            color: black;
+            position: absolute;
+            bottom: 280px;
+            left: 40px;
+            font-size: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #h2 {
+            color: black;
+            position: absolute;
+            bottom: 210px;
+            left: 40px;
+            font-size: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #h3 {
+            color: black;
+            position: absolute;
+            bottom: 140px;
+            left: 40px;
+            font-size: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #h4 {
+            color: blue;
+            position: absolute;
+            bottom: 70px;
+            left: 40px;
+            font-size: 60px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #h5 {
+            color: black;
+            position: absolute;
+            bottom: 72px;
+            left: 282px;
+            font-size: 55px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" >
+        <div class="left">  
+    <h1 id="h1">Explore</h1>
+    <h1 id="h2">the</h1>
+    <h1 id="h3">things</h1>
+    <h1 id="h4">you love</h1>
+    <h1 id="h5">.</h1>
+        </div>
+
+    <div class="right"> 
+        <label for="">Log in to Facebook</label>
+    <form action="">    
+    <br><br><input type="text" placeholder="Enter username">
+    <br><input type="password" placeholder="Enter password"><br><br>
+
+    <button>Log in</button><br><br>
+    <button id="forget">Forget Password?</button><br><br>
+    <button id="create-new-account-button"> Create new account</button>
+</div>
+</form>
+    </div>
+</body>
+
+</html>

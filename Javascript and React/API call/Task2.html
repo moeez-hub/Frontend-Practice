@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Random Dog</button>
+    <br><br>
+    <img id="dogImg" src="" width="300">
+
+    <script>
+        let btn = document.getElementById("btn");
+        let url = "https://dog.ceo/api/breeds/image/random";
+        
+        btn.addEventListener("click", async function(){
+            let response = await fetch(url);
+            let data = await response.json();
+           console.log(data); 
+            document.getElementById("dogImg").src = data.message;
+        });
+    </script>
+</body>
+</html>

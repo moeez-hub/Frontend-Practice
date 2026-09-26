@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let products = [
+            {name: "Phone", price: 50000},
+            {name: "Laptop", price: 120000},
+            {name: "Watch", price: 15000}
+        ];
+
+        let name = products[0].nam;
+        let max = products[0].price;
+        
+        for(let i=0; i<products.length; i++){
+            if(products[i].price > max){
+                max = products[i].price; 
+                name = products[i].name; 
+            }
+        }
+            console.log(name +" "+ max);
+        
+  // for(let int j=0; j<products.length; j++){
+          
+        // }
+
+    </script>
+
+</body>
+
+</html>

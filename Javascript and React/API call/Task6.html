@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="btn">click</button>
+    <p id="output"></p>
+
+    <script>
+
+        let btn = document.getElementById("btn");
+
+        btn.addEventListener("click", function(){
+        fetch("https://official-joke-api.appspot.com/random_joke")
+        .then(function(response){
+            return response.json();
+        })
+
+        .then(function(data){
+            document.getElementById("output").textContent = data.setup +" "+ data.punchline;
+        });
+    })
+    </script>
+
+</body>
+</html>

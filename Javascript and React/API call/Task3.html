@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">For API call</button>
+    <h3 id="output"></h3>
+
+    <script>
+
+        let url = "https://catfact.ninja/fact";
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click", async function() {
+            let api = await fetch(url);
+            let data = await api.json();
+            document.getElementById("output").textContent = data.fact; 
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+   
+    <input type="number" placeholder="enter guess" id="inputBox">
+    <button id="btn">Check</button><br>
+     <h4 id="output"></h4>
+    <script>
+        let randomNum = Math.floor(Math.random() * 10) + 1;
+
+        let num = document.getElementById("inputBox");
+        let btn = document.getElementById("btn");
+        let output = document.getElementById("output");
+
+        btn.addEventListener("click", function () {
+            if (Number(num.value) === randomNum) {
+                output.textContent = "correct";
+            }
+
+            else {
+                output.textContent = "not correct";
+            }
+        })
+    </script>
+</body>
+
+</html>
