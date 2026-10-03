@@ -57,3 +57,14 @@ fromEl.addEventListener("change", function () {
 toEl.addEventListener("change", function () {
   toFlag.src = `https://flagsapi.com/${countries[toEl.value]}/flat/64.png`;
 });
+
+const swapBtn = document.getElementById("swapBtn");
+swapBtn.addEventListener("click", function () {
+  
+  const temp = fromEl.value;
+  fromEl.value = toEl.value;
+  toEl.value = temp;
+
+  fromFlag.src = `https://flagsapi.com/${countries[fromEl.value]}/flat/64.png`;
+  toFlag.src = `https://flagsapi.com/${countries[toEl.value]}/flat/64.png`;
+});
