@@ -200,6 +200,12 @@
   .w-\[500px\] {
     width: 500px;
   }
+  .w-full {
+    width: 100%;
+  }
+  .max-w-\[500px\] {
+    max-width: 500px;
+  }
   .border-collapse {
     border-collapse: collapse;
   }
